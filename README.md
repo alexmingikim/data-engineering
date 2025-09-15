@@ -5,20 +5,18 @@ This repository contains a collection of data engineering projects that demonstr
 ## 🛠️ Technologies & Tools
 
 Across the projects in this repo, you’ll find implementations using:
-- Programming Languages: Python, SQL, Java
-- Databases: PostgreSQL, SQL Server, MySQL, MongoDB
+- Programming Languages: Python, SQL
+- Databases: PostgreSQL, SQL Server, PostgreSQL
 - Data Processing: Pandas, PySpark
 - Workflow Orchestration: Airflow, Prefect
 - Data Warehousing: Snowflake, BigQuery, Redshift
 - Containers & Deployment: Docker, Kubernetes
-- Cloud Platforms: AWS, GCP, Azure
+- Cloud Platforms: AWS, Azure
 
 *(Not every project uses all tools; see project-specific READMEs for details*.)
 
 ## 📊 Example Projects
-- ETL Pipeline with Python & SQL – Extracting data from SQL Server’s AdventureWorks database, transforming it, and loading into PostgreSQL.
-
-~~- Streaming Data with Kafka – Real-time pipeline for event processing.~~
+- Stock Price ETL Pipeline – This project builds an ETL pipeline that extracts historical stock prices from Yahoo Finance, cleans and structures the data, and prepares it for forecasting with TimeGPT.
 
 ~~- Data Warehouse Modeling – Designing a star schema and populating it with transformed data.~~
 
