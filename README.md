@@ -7,11 +7,11 @@ This repository contains a collection of data engineering projects that demonstr
 Across the projects in this repo, you’ll find implementations using:
 - Programming Languages: Python, SQL
 - Databases: PostgreSQL, SQL Server, PostgreSQL
-- Data Processing: Pandas, PySpark
-- Workflow Orchestration: Airflow, Prefect
-- Data Warehousing: Snowflake, BigQuery, Redshift
-- Containers & Deployment: Docker, Kubernetes
-- Cloud Platforms: AWS, Azure
+- Data Processing: Pandas, (PySpark)
+- Workflow Orchestration: Airflow
+- Data Warehousing: Snowflake
+- Containers & Deployment: Docker
+- Cloud Platforms: AWS
 
 *(Not every project uses all tools; see project-specific READMEs for details*.)
 
