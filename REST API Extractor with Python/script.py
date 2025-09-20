@@ -1,6 +1,7 @@
 import requests
 import os
 import csv
+import time
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -16,8 +17,10 @@ for ticker in data['results']:
     tickers.append(ticker)
 
 # get data from next url
-while ('next_url' in data) and (len(tickers) < 5000): # fetch only 5000 stocks to get past API limit
+while ('next_url' in data):
     print('requesting next page', data['next_url'])
+    time.sleep(10) # introduce a delay to avoid rate limiting
+
     response = requests.get(data['next_url'] + f'&apiKey={POLYGON_API_KEY}')
     data = response.json()
     print(data)
