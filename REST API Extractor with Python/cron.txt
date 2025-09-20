@@ -1,0 +1,14 @@
+# How to create a real CRON Job
+
+## edit crontab - note: only works on Linux/macOS
+crontab -e 
+
+## to run every minute
+* * * * * /usr/bin/python3 ~/{path_to_script}
+
+## execute
+crontab
+
+----------------------------------------------------
+# Why use crontab instead of scheduler in python?
+CRON jobs should be able to run offline
