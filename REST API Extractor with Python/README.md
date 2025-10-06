@@ -1,3 +1,8 @@
-# Polygon Tickers CSV Exporter
+# Stock Tickers ETL Script
 
-This Python script retrieves stock tickers from the Polygon.io API and saves them into a CSV file with a structured schema. It supports fetching multiple pages of results from the paginated API.
+This Python script fetches stock ticker information from the Polygon API and loads it into a Snowflake database.
+
+## Features
+
+- Fetches active stock tickers from the Polygon API.
+- Inserts all ticker data into Snowflake with appropriate data types.
