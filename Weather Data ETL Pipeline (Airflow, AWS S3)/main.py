@@ -32,8 +32,7 @@ def etl_weather_data(url):
         'Sunset (local time)': datetime.fromtimestamp(data['sys']['sunset'] + data['timezone'])
     }
     # wrap dictionary in a list to make it compatible with pandas DataFrame
-    transformed_data_list = [transformed_data]
-    df_data = pd.DataFrame(transformed_data_list)
+    df_data = pd.DataFrame([transformed_data])
     
     # Load: save the transformed data to a CSV file
     df_data.to_csv('weather_data_auckland.csv', index=False)
