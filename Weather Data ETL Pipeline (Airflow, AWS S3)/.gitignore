@@ -1,3 +1,5 @@
+.DS_Store
 airflow_venv
 api_key.txt
 *.csv
+airflow/logs

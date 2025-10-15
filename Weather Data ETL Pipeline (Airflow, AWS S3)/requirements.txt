@@ -2,3 +2,4 @@ requests
 pandas
 s3fs
 apache-airflow
+apache-airflow-providers-http
