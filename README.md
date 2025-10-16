@@ -16,8 +16,8 @@ Across the projects in this repo, you’ll find implementations using:
 *(Not every project uses all tools; see project-specific READMEs for details*.)
 
 ## 📊 List of Projects
-- Stock Ticker Ingestion Pipeline – This project automates the extraction and loading of stock ticker data from the Polygon.io API into a Snowflake data warehouse.
-
 - Automated Weather Data ETL Pipeline using Airflow and AWS S3 - This project automates an ETL (Extract, Transform, Load) pipeline that fetches current weather data from the OpenWeatherMap API, transforms it into a structured format, and loads it into an Amazon S3 bucket using Apache Airflow.
+
+- Stock Ticker Ingestion Pipeline – This project automates the extraction and loading of stock ticker data from the Polygon.io API into a Snowflake data warehouse.
 
 ~~- Data Warehouse Modeling – Designing a star schema and populating it with transformed data.~~
