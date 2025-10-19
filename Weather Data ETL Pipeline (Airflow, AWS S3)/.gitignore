@@ -3,3 +3,5 @@ airflow_venv
 api_key.txt
 *.csv
 airflow/logs
+__pycache__/
+airflow/simple_auth_manager_passwords.json.generated
