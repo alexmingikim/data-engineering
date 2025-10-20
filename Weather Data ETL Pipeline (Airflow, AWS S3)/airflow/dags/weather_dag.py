@@ -30,7 +30,7 @@ def transform_load_data(task_instance):
     df_data = pd.DataFrame([transformed_data])
 
     # load AWS credentials
-    with open("aws_credentials.txt") as f:
+    with open("/home/ubuntu/airflow/aws_credentials.txt") as f:
         for line in f:
             name, value = line.strip().split("=", 1)
             os.environ[name] = value
