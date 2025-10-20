@@ -6,3 +6,5 @@ airflow/logs
 __pycache__/
 airflow/simple_auth_manager_passwords.json.generated
 aws_credentials.txt
+*.png
+airflow.cfg
