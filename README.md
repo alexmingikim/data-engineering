@@ -16,7 +16,7 @@ Across the projects in this repo, you’ll find implementations using:
 *(Not every project uses all tools; see project-specific READMEs for details*.)
 
 ## 📊 List of Projects
-- Automated Weather Data ETL Pipeline using Airflow and AWS S3 - This project automates an ETL (Extract, Transform, Load) pipeline that fetches current weather data from the OpenWeatherMap API, transforms it into a structured format, and loads it into an Amazon S3 bucket using Apache Airflow.
+- Automated Weather Data ETL Pipeline using Airflow and AWS S3 - This project implements a simple ETL (Extract, Transform, Load) data pipeline using Apache Airflow to fetch real-time weather data from the OpenWeatherMap API, transform it into a structured format using Pandas, and load it into an AWS S3 bucket for storage.
 
 - Stock Ticker Ingestion Pipeline – This project automates the extraction and loading of stock ticker data from the Polygon.io API into a Snowflake data warehouse.
 
