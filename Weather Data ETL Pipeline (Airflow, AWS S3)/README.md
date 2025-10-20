@@ -12,7 +12,7 @@ The pipeline performs the following key steps:
 
 ## Airflow DAG flow diagram
 
-![alt text](image.png)
+![Airflow DAG Flow](https://github.com/user-attachments/assets/fc6a76fd-fc9c-480e-987d-1dd2d7e63196)
 
 ### Tasks:
 
@@ -38,6 +38,6 @@ weather-data-etl/
 
 ## Output
 
-![alt text](image-1.png)
+![Output Screenshot](https://github.com/user-attachments/assets/744312f4-e4fb-44b1-8cd5-641df59bae52)
 
 Structured csv file stored within an AWS S3 bucket. 
