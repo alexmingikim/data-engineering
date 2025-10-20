@@ -5,8 +5,9 @@ from airflow.providers.http.operators.http import HttpOperator
 from airflow.providers.standard.operators.python import PythonOperator
 import pandas as pd
 import json
+import os
 
-def transform_load_data(task_instance, **kwargs):
+def transform_load_data(task_instance):
     # pull data from previous task
     data = task_instance.xcom_pull(task_ids='extract_weather_data')
     
@@ -25,16 +26,29 @@ def transform_load_data(task_instance, **kwargs):
         'Sunrise (local time)': datetime.fromtimestamp(data['sys']['sunrise'] + data['timezone']),
         'Sunset (local time)': datetime.fromtimestamp(data['sys']['sunset'] + data['timezone'])
     }
-
     # convert dictionary to DataFrame
     df_data = pd.DataFrame([transformed_data])
 
-    # save the transformed data to a CSV file with timestamp
+    # load AWS credentials
+    with open("aws_credentials.txt") as f:
+        for line in f:
+            name, value = line.strip().split("=", 1)
+            os.environ[name] = value
+
+    aws_credentials = {
+        "key": os.environ.get("AWS_ACCESS_KEY_ID"),
+        "secret": os.environ.get("AWS_SECRET_ACCESS_KEY"),
+        "token": os.environ.get("AWS_SESSION_TOKEN")
+    }        
+
     now = datetime.now().strftime("%d%m%Y_%H%M%S")
-    filename = f"current_weather_data_auckland_{now}.csv"
-    df_data.to_csv(filename, index=False)
+    # save to S3 bucket
+    filename = f"s3://weatherapiairflowbucket-amk/current_weather_data_auckland_{now}.csv"
+    df_data.to_csv(filename, index=False, storage_options=aws_credentials)
 
-
+    # test locally
+    # filename = f"current_weather_data_auckland_{now}.csv"
+    # df_data.to_csv(filename, index=False)
 
 default_args = {
     'owner': 'airflow',

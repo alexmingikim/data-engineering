@@ -5,3 +5,4 @@ api_key.txt
 airflow/logs
 __pycache__/
 airflow/simple_auth_manager_passwords.json.generated
+aws_credentials.txt
