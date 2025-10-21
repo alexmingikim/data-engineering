@@ -16,7 +16,10 @@ Across the projects in this repo, you’ll find implementations using:
 *(Not every project uses all tools; see project-specific READMEs for details*.)
 
 ## 📊 List of Projects
-- Weather Data ETL Pipeline **(Apache Airflow, AWS (EC2, S3))** 
+- Data Analysis with **dbt** (in-progress)
+    - This project demonstrates an end-to-end ELT (Extract, Load, Transform) data pipeline for analysing movie ratings data, using the MovieLens 20M dataset as a proxy for Netflix-like content recommendation and analysis. The pipeline extracts data from CSV files, loads it into Amazon S3 and Snowflake as a raw landing zone, and uses DBT (data build tool) for SQL-based transformations into analytics-ready models.
+
+- Weather Data ETL Pipeline **(Apache Airflow, AWS (EC2, S3))**
     - This project implements a simple ETL (Extract, Transform, Load) data pipeline using Apache Airflow to fetch real-time weather data from the OpenWeatherMap API, transform it into a structured format using Pandas, and load it into an AWS S3 bucket for storage.
 
 - Stock Ticker Ingestion Pipeline **(Snowflake)** 
