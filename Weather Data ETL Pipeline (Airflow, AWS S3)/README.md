@@ -10,6 +10,10 @@ The pipeline performs the following key steps:
 - Transform — Parses and transforms the JSON response to extract relevant fields (temperature, humidity, wind speed, etc.) and converts units where needed.
 - Load — Saves the transformed dataset as a CSV file in an AWS S3 bucket
 
+## Architecture 
+
+![Architecture](https://github.com/user-attachments/assets/cb548a08-6568-48b3-9121-964fdb30aa25)
+
 ## Airflow DAG flow diagram
 
 ![Airflow DAG Flow](https://github.com/user-attachments/assets/fc6a76fd-fc9c-480e-987d-1dd2d7e63196)
