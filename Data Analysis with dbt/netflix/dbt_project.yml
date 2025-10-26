@@ -31,6 +31,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   netflix:
-    # Config indicated by + and applies to all files under models/example/
-    example: # folder name
-      +materialized: view
+    +materialized: view  # default materialisation for all models in the project
+    dim: 
+      +materialized: table # materialise dim models as tables
+
