@@ -34,4 +34,6 @@ models:
     +materialized: view  # default materialisation for all models in the project
     dim: 
       +materialized: table # materialise dim models as tables
+    fact:
+      +materialized: table # materialise fact models as tables
 
