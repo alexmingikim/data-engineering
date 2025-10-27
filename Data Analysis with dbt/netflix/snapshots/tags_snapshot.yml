@@ -1,0 +1,9 @@
+snapshots:
+  - name: tags_snapshot
+    relation: ref('src_tags') # look for changes in the src_tags model
+    config:
+      schema: snapshots
+      strategy: timestamp
+      unique_key: ['user_id', 'movie_id', 'tag']
+      updated_at: tag_timestamp
+      hard_deletes: invalidate
