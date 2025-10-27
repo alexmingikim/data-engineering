@@ -1,5 +1,5 @@
 -- this configuration overrides the default materialization set in dbt_project.yml
--- set model to incremental
+-- set model to INCREMENTAL
 {{
     config(
         materialized='incremental'
