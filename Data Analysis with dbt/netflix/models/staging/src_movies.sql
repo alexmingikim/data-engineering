@@ -1,5 +1,5 @@
 WITH raw_movies AS (
-    SELECT * FROM {{sources('netflix', 'r_movies')}} -- using a source definition
+    SELECT * FROM {{ source('netflix', 'r_movies') }} -- using a source definition
 )
 SELECT 
     movieID AS movie_id,
