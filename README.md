@@ -6,12 +6,11 @@ This repository contains a collection of data engineering projects that demonstr
 
 Across the projects in this repo, you’ll find implementations using:
 - Programming Languages: Python, SQL
-- Databases: PostgreSQL, SQL Server, PostgreSQL
-- Data Processing: Pandas, DBT, (PySpark)
-- Workflow Orchestration: Airflow
-- Data Warehousing: Snowflake
-- Containers & Deployment: Docker
-- Cloud Platforms: AWS
+- Database: Azure SQL Database
+- Data Warehouse: Snowflake, Azure Synapse Analytics
+- Data Processing: DBT, Azure Databricks
+- Orchestration: Airflow, Azure Data Factory
+- Cloud Platforms: Azure (primary), AWS
 
 ## 📊 List of Projects
 - Azure End-to-End Data Engineering Project &nbsp;<img src="https://code.benco.io/icon-collection/azure-icons/Data-Factory.svg" alt="Data Factory" width="20" style="vertical-align:middle;"/> &nbsp;<img src="https://code.benco.io/icon-collection/azure-icons/Data-Lake-Storage-Gen1.svg" alt="Azure Data Lake Storage Gen2" width="20" style="vertical-align:middle;"/> &nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Databricks-logo.svg" alt="Databricks" width="35" style="vertical-align:middle;"/> &nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="PySpark" width="30" style="vertical-align:middle;"/> &nbsp;<img src="https://code.benco.io/icon-collection/azure-icons/Azure-Synapse-Analytics.svg" alt="Azure Synapse Analytics" width="20" style="vertical-align:middle;"/> &nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" width="20" style="vertical-align:middle;"/> (in-progress)
