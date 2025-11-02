@@ -5,3 +5,5 @@ This project demonstrates a complete end-to-end data engineering pipeline on Mic
 Inspired by the [Azure End-To-End Data Engineering Project video](https://www.youtube.com/watch?v=0GTZ-12hYtU) by Ansh Lamba.
 
 ## Architecture
+
+![Architecture](https://github.com/user-attachments/assets/6146fd5a-71ed-4a56-90e7-8d4ca48fcac6)
